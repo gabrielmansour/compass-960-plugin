@@ -42,7 +42,7 @@
 =grid-prefixes(!cols = !ninesixty_columns)
   @for !n from 1 through !cols - 1
     .prefix_#{!n}
-      +grid-prefix(!n, !cols = !ninesixty_columns)
+      +grid-prefix(!n, !cols)
 
 =grid-suffix(!n, !cols = !ninesixty_columns)
   :padding-right= (!ninesixty_grid_width / !cols) * !n
