@@ -1,8 +1,6 @@
 !ninesixty_gutter_width ||= 20px
 !ninesixty_grid_width ||= 960px
-// defaults:
 !ninesixty_columns ||= 12
-!ninesixty_column_width ||= (!ninesixty_grid_width / !ninesixty_columns) - !ninesixty_gutter_width
 
 =grid-container
   :margin-left auto
@@ -63,6 +61,5 @@
   +grids(!cols)
   +grid-prefixes(!cols)
   +grid-suffixes(!cols)
-  // redefine variables, keep !ninesixty_column_width synched:
+  // redefine !ninesixty_columns
   !ninesixty_columns = !cols
-  !ninesixty_column_width = (!ninesixty_grid_width / !ninesixty_columns) - !ninesixty_gutter_width
